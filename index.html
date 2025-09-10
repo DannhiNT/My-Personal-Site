@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/intro.css">
+  <link rel="stylesheet" href="/styles/about.css">
+  <link rel="stylesheet" href="/styles/experience.css">
+  <link rel="stylesheet" href="/styles/projects.css">
+  <link rel="stylesheet" href="/styles/contact.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <script defer src="script.js"></script>
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <title>Justine's Personal Portfolio</title>
+</head>
+
+<body>
+  <nav class="floating-nav" aria-label="Primary">
+    <a href="#home" class="nav-link nav-home" aria-label="Home" title="Home">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px">
+        <path
+          d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+      </svg>
+    </a>
+
+    <a href="#about" class="nav-link nav-about" aria-label="About" title="About">
+      <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px">
+        <path
+          d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+      </svg>
+    </a>
+
+    <a href="#experience" class="nav-link nav-experience" aria-label="Experience" title="Experience">
+      <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px">
+        <path
+          d="M146.67-120q-27 0-46.84-19.83Q80-159.67 80-186.67v-466.66q0-27 19.83-46.84Q119.67-720 146.67-720H320v-93.33q0-27 19.83-46.84Q359.67-880 386.67-880h186.66q27 0 46.84 19.83Q640-840.33 640-813.33V-720h173.33q27 0 46.84 19.83Q880-680.33 880-653.33v466.66q0 27-19.83 46.84Q840.33-120 813.33-120H146.67Zm0-66.67h666.66v-466.66H146.67v466.66Zm240-533.33h186.66v-93.33H386.67V-720Zm-240 533.33v-466.66 466.66Z" />
+      </svg>
+    </a>
+
+    <a href="#projects" class="nav-link nav-projects" aria-label="Projects" title="Projects">
+      <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px">
+        <path
+          d="M344-336 200-480l144-144 56 57-87 87 87 87-56 57Zm272 0-56-57 87-87-87-87 56-57 144 144-144 144ZM200-120q-33 0-56.5-23.5T120-200v-160h80v160h160v80H200Zm400 0v-80h160v-160h80v160q0 33-23.5 56.5T760-120H600ZM120-600v-160q0-33 23.5-56.5T200-840h160v80H200v160h-80Zm640 0v-160H600v-80h160q33 0 56.5 23.5T840-760v160h-80Z" />
+      </svg>
+    </a>
+
+    <a href="#contact" class="nav-link nav-contact" aria-label="Contact" title="Contact">
+      <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px">
+        <path
+          d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z" />
+      </svg>
+    </a>
+  </nav>
+  <section class="intro-section" id="home">
+    <div class="intro-title">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+        <path
+          d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z" />
+      </svg>
+      <span>My Portfolio </span>
+    </div>
+    <div class="greeting-text">
+      <p>Hello, I am</p>
+      <h1>Justine/Nhi Nguyen</h1>
+      <p class="role">An aspiring software engineer</p>
+    </div>
+    <div class="button-block">
+      <a href="/Tran_Dan_Nhi_Nguyen__nguytr01_luther_edu__resume.pdf" download class="resume-btn"> <svg
+          xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+          <path
+            d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+        </svg> Resume </a>
+      <button class="connect-btn">Connect!</button>
+    </div>
+    <div class="icon-block">
+      <a href="https://www.linkedin.com/in/dannhint/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+          alt="Linkedin" width="35" />
+      </a>
+      <a href="https://github.com/DannhiNT" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github"
+          width="35" />
+      </a>
+    </div>
+    <div>
+      <a href="#about" class="scroll_down">Scroll Down</a>
+    </div>
+    </div>
+  </section>
+  <section class="about-section" id="about">
+    <div class="intro">
+      <p>Get to know</p>
+      <h1>About me</h1>
+    </div>
+    <div class="about-section-container">
+      <div class="avatar-frame">
+        <div class="avatar-bg"></div>
+        <img src="/assets/images/my-photo.JPG" alt="my-picture" class="about-avatar">
+      </div>
+      <div class="text-block">
+        <div class="about-me">
+          <p>Hello 👋, I am <span>Justine/Nhi Nguyen</span>, a passionate <span>Computer Science and Statistics</span>
+            student with hands-on experience in <span>Full-stack Web Development</span> gained through my internship and
+            coding
+            projects.
+          </p>
+          <p>💖 My interest is <span>learning new tech stacks</span> and <span>leveraging them to solve complex
+              problems</span>.</p>
+          <p>😽 Outside
+            the tech
+            world, I enjoy listening to music, reading, cooking good food, and sipping my favorite matcha latte 🫶🍵.
+          </p>
+          <p><span>I am eager to explore software engineering roles</span> and connect with like-minded individuals.
+            Let’s chat!</p>
+        </div>
+        <div class="education">
+          <h1>EDUCATION</h1>
+          <p><span>Major:</span> Computer Science</p>
+          <p><span>School:</span> Luther College</p>
+          <p><span>GPA:</span> 4.0/4.0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section" id="experience">
+    <div class="text-block">
+      <p>What I have</p>
+      <h1>My experience</h1>
+    </div>
+    <div class="experience-block">
+      <div class="experience-card ec1">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#1f1f1f">
+          <path
+            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+        </svg>
+        <h1>Technical Skills</h1>
+        <ul>
+          <li>Web Development</li>
+          <li>Object-Oriented Programming</li>
+          <li>Data Structures & Algorithms</li>
+          <li>Development & Operations</li>
+        </ul>
+      </div>
+      <div class="experience-card ec2">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#1f1f1f">
+          <path
+            d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm0 0v-640 640Zm200-360 100-60 100 60-100-60-100 60Z" />
+        </svg>
+        <h1>Relevant Coursework</h1>
+        <p>Data Structures & Algorithms, Web Development Fundamentals, Data Modelling and Querying, Computer
+          Architecture/Organization, Discrete Mathematics, Probability & Data Analysis. </p>
+      </div>
+      <div class="experience-card ec3">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#1f1f1f">
+          <path
+            d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z" />
+        </svg>
+        <h1>Programming Languages</h1>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Ruby</li>
+          <li>Swift</li>
+        </ul>
+      </div>
+      <div class="experience-card ec4">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#1f1f1f">
+          <path
+            d="M200-120q-33 0-56.5-23.5T120-200v-500q0-14 4.5-26.5T138-750l56-68q9-11 20.5-16.5T240-840h480q14 0 25.5 5.5T766-818l56 68q9 11 13.5 23.5T840-700v500q0 33-23.5 56.5T760-120H200Zm16-600h528l-34-40H250l-34 40Zm-16 520h560v-440H200v440Zm382-78 142-142-142-142-58 58 84 84-84 84 58 58Zm-202 0 58-58-84-84 84-84-58-58-142 142 142 142Zm-180 78v-440 440Z" />
+        </svg>
+        <h1>Applications and Frameworks</h1>
+        <ul>
+          <li>Ruby on Rails, Node.js, Express.js</li>
+          <li>React.js, Next.js, EJS</li>
+          <li>Bootstrap, Tailwind CSS</li>
+          <li>REST API, Axios</li>
+          <li>Git, GitHub, VS Code, Postman, HashiCorp Vault</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-block">
+      <h1>Work experience</h1>
+    </div>
+    <div class="work-experience">
+      <div class="work-card wc1">
+        <div class="work-avatar">
+          <img src="/assets/images/logo_rakuna.jpg" alt="rakuna-logo" width="40">
+        </div>
+        <h1>Full-stack Application Development Intern</h1>
+        <h2>Product Team @Rakuna</h2>
+        <p>Collaborated with fellow interns and engineers to build and contribute to Rakuna's production web
+          application which provides comprehensive recruiting tools, using <span>Ruby on Rails, PostgreSQL, React,
+            Tailwind CSS,
+            RSpec,
+            Sidekiq, and REST APIs,
+            improving user experience and boosting team productivity by 60%</span>.</p>
+        <p>Analyzed information, evaluated results, and conducted <span>QA testings</span> to come up withj optimal
+          solutions
+          and ensure
+          product quality, <span>reducing critical bugs by 30%</span> before customer demos.</p>
+        <p>Researched and <span>contributed to product pipelines—including planning, development, deployment, and
+            maintenance</span>—by deploying a Rails 6 application on AWS with <span>Capistrano, Nginx, Puma,
+            PostgreSQL</span>,
+          troubleshooting configuration errors and gaining hands-on experience with traditional deployment processes.
+        </p>
+      </div>
+      <div class="work-card wc2">
+        <div class="work-avatar">
+          <img src="/assets/images/logo-luther.png" alt="luther-logo" width="40">
+        </div>
+        <h1>Teaching Assistant | Web/Computer Science Fundamentals</h1>
+        <h2>Computer Science Department @Luther College</h2>
+        <p>Facilitated <span>6-hour weekly</span> help sessions, supporting <span>50 students</span> with <span>core web
+            development concepts</span> including
+          HTML, CSS, JavaScript as well as <span>foundations in Computer Science</span> with Python, and providing
+          assignment
+          guidance.</p>
+        <p><span>Improved 40% of students’ academic efficiency and 20% in test scores averagely</span>.</p>
+        <p>Collaborated closely with course’s instructors to <span>improve the class environment and support students in
+            time</span>.
+        </p>
+      </div>
+    </div>
+    <div class="text-block">
+      <h1>Leadership experience</h1>
+    </div>
+    <div class="leadership-experience">
+      <div class="leadership-card lc1">
+        <div class="leadership-avatar">
+          <img src="/assets/images/elab-logo.png" alt="elab-logo" width="40">
+        </div>
+        <h1>Media Manager/Tech Leader</h1>
+        <h2>ELab – Library Project Ha Tinh</h2>
+        <p><span>Developed and managed Elabrary, a UI/UX design website</span> providing 500+ self-learning resources,
+          while
+          leading a 12-member team to <span>create 200+ visuals</span> for the library’s webpage.</p>
+        <p><span>Boosted the library’s online impact by 40%</span> through innovative social media strategies and
+          trained team
+          members in <span>graphic design and web management tools</span>.
+        </p>
+      </div>
+      <div class="leadership-card lc2">
+        <div class="leadership-avatar">
+          <img src="/assets/images/pea-logo.jpg" alt="pea-logo" width="40">
+        </div>
+        <h1>Academic Manager</h1>
+        <h2>The PEA Organization – Educational Organization Ha Tinh</h2>
+        <p>Managed a 40-member academic team to produce 300+ educational posts and publish them on the organization’s
+          website and media page with 8,000+ followers, <span>boosting student engagement by 40%</span>.
+        </p>
+        <p>Organized six mock entrance examinations across five core subjects in 2024–2025, engaging 400+ students and
+          volunteers in Ha Tinh, and <span>contributing to a 60% increase</span> in the organization’s media reach.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section" id="projects">
+    <div class="text-block">
+      <p>What I do</p>
+      <h1>My projects</h1>
+    </div>
+    <div class="project-display">
+      <div class="project-card pc1">
+        <div class="project-image"><img src="/assets/images/opendiary.png"></div>
+        <div>
+          <h1>OpenDiary</h1>
+          <h2>Full-stack Developer</h2>
+          <p>Developed a full-stack social app project using Ruby on Rails, PostgreSQL, Devise authentication, and
+            Active Storage, enabling users to share their personal posts and interact with other accounts. The app is
+            a
+            comprehensive clone of modern social media platforms.</p>
+          <a href="https://github.com/DannhiNT/Open-Diary-Site" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="project-card pc2">
+        <div class="project-image"><img src="/assets/images/folkify.png"></div>
+        <div>
+          <h1>Folkify Recipe Search Tool</h1>
+          <h2>Front-end developer</h2>
+          <p>Developed a recipe search website using Vanilla JavaScript and a public Recipe API, allowing users to
+            search, view, track servings, and bookmark recipes; with real-time DOM updates for smooth and
+            interactive experiences. Organized the project with MVC architecture to ensure scalability and
+            maintainability.</p>
+          <a href="https://github.com/DannhiNT/Recipe-Search-Tool" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="project-card pc3">
+        <div class="project-image"><img src="/assets/images/smartiestudy.png"></div>
+        <div>
+          <h1>SmartieStudy</h1>
+          <h2>Full-stack Developer</h2>
+          <p>A Hybrid Study Platform using MERN stack. </p>
+          <p>Built dynamic server-rendered views using EJS and responsive frontend components with React.js and
+            Bootstrap, while integrating frontend and backend via Axios and managing backend routing and middleware with
+            Express.js.
+          </p>
+          <p>Status: Work in Progress — implemented core routing, templating, and UI; currently extending functionality
+            with database integration.
+          </p>
+          <a href="https://github.com/DannhiNT/Study-Blog-Site" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="project-card pc4">
+        <div class="project-image"><img src="/assets/images/mapty.png"></div>
+        <div>
+          <h1>Mapty Tracker</h1>
+          <h2>Front-end Developer</h2>
+          <p>Built an interactive mapping app to log, track, and visualize outdoor workouts like running and cycling.
+          </p>
+          <p> Applied Object-Oriented Programming principles to ensure a scalable and maintainable codebase. Utilized
+            the Geolocation API to accurately capture and display user workout routes on a map, and integrated Chrome
+            Local
+            Storage to persist user data and preferences.</p>
+          <a href="https://github.com/DannhiNT/Mapty-Tracker-Site" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="project-card pc5">
+        <div class="project-image"><img src="/assets/images/elabrary.png"></div>
+        <div>
+          <h1>ELabrary</h1>
+          <h2>Media Manager/Tech Leader</h2>
+          <p>An online library website for students to self-study English, featuring UI/UX and graphic designs.</p>
+          <a href="https://elablibrary.wordpress.com/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+            </svg>
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="project-card pc6">
+        <div class="project-image"><img src="/assets/images/arduino.png"></div>
+        <div>
+          <h1>Arduino Pomodoro Clock</h1>
+          <p>An Arduino-based Pomodoro Clock with start/stop, reset, and break-skip functions, integrating
+            sensors, RGB LED, buzzer, and LCD display to provide real-time visual and audible feedback for efficient
+            time management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-options">
+      <div class="text-block">
+        <h1>GET <span>IN TOUCH</span></h1>
+        <h2>WITH ME</h2>
+        <p>nguytr01@luther.edu</p>
+      </div>
+      <div class="icon-block">
+        <a href="https://www.linkedin.com/in/dannhint/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+            alt="Linkedin" width="35" />
+        </a>
+        <a href="https://github.com/DannhiNT" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github"
+            width="35" />
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="aafdc152-9a6e-48db-b667-6165560d43be">
+      <input type="text" name="name" placeholder="Your Full Name" required="">
+      <input type="email" name="email" placeholder="Your Email" required="">
+      <textarea type="message" name="message" rows="7" placeholder="Your Message" required=""></textarea>
+      <button type="submit" class="btn btn-primary">Send message!</button>
+    </form>
+  </section>
+  <footer>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="copyright">&copy; <span id="year"></span> Nhi Nguyen. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

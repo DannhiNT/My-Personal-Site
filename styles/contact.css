@@ -1,0 +1,117 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 5rem;
+  background: var(--light-background);
+}
+
+/* Stack columns on small screens */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact info styles */
+.contact-section .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section h1 {
+  margin-bottom: 0.5rem;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.contact-section h1 span {
+  color: var(--primary-pink)
+}
+
+.contact-section p {
+  margin: 0.5rem 0;
+  color: var(--secondary-black);
+}
+
+/* Form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-pink);
+  padding: 2rem;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid var(--primary-pink);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  resize: none;
+  max-width: 500px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--light-yellow);
+  box-shadow: 0 0 0 3px rgba(246, 59, 165, 0.3);
+}
+
+.contact-form button {
+  background: var(--primary-pink);
+  color: #fff;
+  padding: 0.75rem;
+  max-width: 10rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.contact-form button:hover {
+  background: white;
+  color: var(--primary-pink);
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Social icons */
+.contact-section .icon-block {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-section .icon-block a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.contact-section .icon-block a:hover {
+  transform: scale(1.1);
+}

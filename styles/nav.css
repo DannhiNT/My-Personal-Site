@@ -1,0 +1,46 @@
+.floating-nav {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: var(--tertiary-pink);
+  border: 1px solid var(--primary-pink);
+  opacity: 0.8;
+  padding: 7px 20px;
+  border-radius: 50px;
+  z-index: 999;
+}
+
+.floating-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.floating-nav a:hover {
+  transform: scale(1.2);
+}
+
+.floating-nav a svg {
+  display: block;
+  fill: black;
+}
+
+.floating-nav .nav-link.active {
+  background-color: var(--light-yellow);
+  opacity: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease, fill 0.3s ease;
+}
+
+.floating-nav .nav-link.active svg {
+  fill: var(--primary-pink);
+  transition: fill 0.3s ease;
+}

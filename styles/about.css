@@ -1,0 +1,144 @@
+.about-section {
+  background-color: var(--secondary-pink);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 5px 20px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.about-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--light-yellow);
+}
+
+.intro p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.about-section .text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 60%;
+}
+
+.about-section .text-block>p:nth-of-type(2) {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-me {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+}
+
+.about-me h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--primary-pink);
+}
+
+.about-me p {
+  font-weight: 500;
+  margin-bottom: auto;
+}
+
+.about-me p span {
+  font-weight: bold;
+}
+
+.education {
+  background: var(--light-yellow);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.education h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--primary-pink);
+}
+
+
+.education p {
+  margin: 5px 0;
+  color: black;
+}
+
+
+.education p span {
+  font-weight: 600;
+}
+
+.avatar-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-yellow);
+  border-radius: 17px;
+  z-index: 0;
+}
+
+/* Avatar image */
+.about-avatar {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation: floatAvatar 4s ease-in-out infinite;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  z-index: 1;
+  transform: rotate(5deg);
+}
+
+.about-avatar:hover {
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1000px) {
+  .about-section .text-block {
+    max-width: 100%;
+  }
+
+  .about-section {
+    padding: 40px 20px;
+  }
+}

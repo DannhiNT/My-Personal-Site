@@ -1,0 +1,180 @@
+.intro-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: var(--light-background);
+}
+
+.intro-title {
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--primary-pink);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.intro-title svg {
+  fill: var(--primary-pink)
+}
+
+.greeting-text h1 {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  color: var(--primary-pink);
+}
+
+.greeting-text p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: var(--secondary-black);
+}
+
+.greeting-text .role {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  width: 0;
+  margin: 0 auto;
+  animation: typing-reset 6s steps(26, end) infinite,
+    blink 0.6s step-end infinite;
+}
+
+@keyframes typing-reset {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  60% {
+    width: 26ch;
+    opacity: 1;
+  }
+
+  80% {
+    width: 26ch;
+    opacity: 1;
+  }
+
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes reset {
+
+  0%,
+  70% {
+    opacity: 1;
+  }
+
+  71%,
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.button-block {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Shared button styles */
+.button-block button,
+.button-block a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Resume button: transparent with stroke */
+.resume-btn {
+  background-color: transparent;
+  color: var(--primary-pink);
+  border: 1.5px solid var(--primary-pink);
+}
+
+.resume-btn svg {
+  fill: var(--primary-pink);
+}
+
+.resume-btn:hover {
+  background-color: var(--primary-pink);
+  color: white;
+  border: 1.5px solid var(--primary-pink);
+}
+
+.resume-btn:hover svg {
+  fill: white;
+}
+
+/* Connect button: filled */
+.connect-btn {
+  background-color: var(--primary-pink);
+  color: white;
+  border: 1.5px solid var(--primary-pink);
+}
+
+.connect-btn:hover {
+  background-color: var(--secondary-pink);
+  border: 1.5px solid var(--secondary-pink);
+}
+
+.icon-block {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.icon-block a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.2s ease;
+}
+
+.icon-block a:hover {
+  transform: scale(1.1);
+}
+
+.scroll_down {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.scroll_down:hover,
+.scroll_down:focus {
+  color: #000000;
+  text-decoration: none;
+  outline: none;
+}

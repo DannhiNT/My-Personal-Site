@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--secondary-pink);
+  background-color: var(--secondary);
   padding: 2rem 1rem;
   text-align: center;
   padding-bottom: 4.5rem;
@@ -10,7 +10,7 @@ footer {
 
 footer h1 {
   font-size: 3.5rem;
-  color: var(--primary-pink);
+  color: var(--primary);
   margin-bottom: 1.5rem;
 }
 
@@ -25,7 +25,7 @@ footer h1 {
 }
 
 .footer-nav a {
-  color: var(--primary-pink);
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
 }

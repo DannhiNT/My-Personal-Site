@@ -15,7 +15,7 @@
   left: 3rem;
   font-size: 1.5rem;
   font-weight: 300;
-  color: var(--primary-pink);
+  color: var(--primary);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -23,13 +23,13 @@
 }
 
 .intro-title svg {
-  fill: var(--primary-pink)
+  fill: var(--primary);
 }
 
 .greeting-text h1 {
   font-size: 3.5rem;
   margin: 10px 0;
-  color: var(--primary-pink);
+  color: var(--primary);
 }
 
 .greeting-text p {
@@ -71,7 +71,6 @@
   }
 }
 
-
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -79,7 +78,6 @@
 }
 
 @keyframes reset {
-
   0%,
   70% {
     opacity: 1;
@@ -115,18 +113,18 @@
 /* Resume button: transparent with stroke */
 .resume-btn {
   background-color: transparent;
-  color: var(--primary-pink);
-  border: 1.5px solid var(--primary-pink);
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
 }
 
 .resume-btn svg {
-  fill: var(--primary-pink);
+  fill: var(--primary);
 }
 
 .resume-btn:hover {
-  background-color: var(--primary-pink);
+  background-color: var(--primary);
   color: white;
-  border: 1.5px solid var(--primary-pink);
+  border: 1.5px solid var(--primary);
 }
 
 .resume-btn:hover svg {
@@ -135,14 +133,14 @@
 
 /* Connect button: filled */
 .connect-btn {
-  background-color: var(--primary-pink);
+  background-color: var(--primary);
   color: white;
-  border: 1.5px solid var(--primary-pink);
+  border: 1.5px solid var(--primary);
 }
 
 .connect-btn:hover {
-  background-color: var(--secondary-pink);
-  border: 1.5px solid var(--secondary-pink);
+  background-color: var(--secondary);
+  border: 1.5px solid var(--secondary);
 }
 
 .icon-block {

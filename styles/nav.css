@@ -6,8 +6,8 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  background: var(--tertiary-pink);
-  border: 1px solid var(--primary-pink);
+  background: var(--tertiary);
+  border: 1px solid var(--primary);
   opacity: 0.8;
   padding: 7px 20px;
   border-radius: 50px;
@@ -41,6 +41,6 @@
 }
 
 .floating-nav .nav-link.active svg {
-  fill: var(--primary-pink);
+  fill: var(--primary);
   transition: fill 0.3s ease;
 }

@@ -36,7 +36,7 @@
 }
 
 .contact-section h1 span {
-  color: var(--primary-pink)
+  color: var(--primary);
 }
 
 .contact-section p {
@@ -48,7 +48,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  background-color: var(--secondary-pink);
+  background-color: var(--secondary);
   padding: 2rem;
   border: 1px solid transparent;
   border-radius: 18px;
@@ -58,7 +58,7 @@
 .contact-form textarea {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
-  border: 1.5px solid var(--primary-pink);
+  border: 1.5px solid var(--primary);
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.25s, box-shadow 0.25s;
@@ -74,7 +74,7 @@
 }
 
 .contact-form button {
-  background: var(--primary-pink);
+  background: var(--primary);
   color: #fff;
   padding: 0.75rem;
   max-width: 10rem;
@@ -88,7 +88,7 @@
 
 .contact-form button:hover {
   background: white;
-  color: var(--primary-pink);
+  color: var(--primary);
 }
 
 .contact-options {

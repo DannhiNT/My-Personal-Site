@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-pink: #fe52a8;
-  --secondary-pink: #f8a5ce;
-  --tertiary-pink: #ffc7e3;
-  --primary-blue: #cce0f8;
+  --primary: #161e54;
+  --secondary: #a5cdf8;
+  --tertiary: #c7e4ff;
+  --primary-blue: #d2ccf8;
   --secondary-blue: #dce9f8;
   --primary-purple: #ebccf8;
   --secondary-purple: #f1dafb;
@@ -13,10 +13,10 @@
   --primary-black: #1f1f1f;
   --secondary-black: #3b3838;
   --tertiary-black: #575252;
-  --light-background: #fedaeb;
+  --light-background: #daf6fe;
   --light-yellow: #fffbec;
 }
 
 * {
-  font-family: 'Montserrat', 'Arial';
+  font-family: "Montserrat", "Arial";
 }

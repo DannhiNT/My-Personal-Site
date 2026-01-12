@@ -11,7 +11,7 @@
   font-size: 3.5rem;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: var(--primary-pink);
+  color: var(--primary);
 }
 
 .experience-section .text-block p {
@@ -53,7 +53,7 @@
 }
 
 .ec1 {
-  background-color: var(--secondary-pink);
+  background-color: var(--secondary);
 }
 
 .ec2 {
@@ -129,7 +129,7 @@
 }
 
 .wc1 {
-  background-color: var(--secondary-pink);
+  background-color: var(--secondary);
 }
 
 .wc2 {
@@ -145,7 +145,7 @@
 }
 
 .wc1:hover {
-  background-color: var(--tertiary-pink);
+  background-color: var(--tertiary);
 }
 
 .wc2:hover {
@@ -189,7 +189,6 @@
 .leadership-card p span {
   font-weight: 600;
 }
-
 
 @media (max-width: 1300px) {
   .experience-block {
